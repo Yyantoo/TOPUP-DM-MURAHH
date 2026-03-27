@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diamond Murah - TopUp Game Terpercaya</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo">
+                    <i class="fas fa-gem"></i>
+                    <span>DiamondMurah.ID</span>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="#home" class="nav-link">Home</a></li>
+                    <li><a href="#games" class="nav-link">Game</a></li>
+                    <li><a href="#topup" class="nav-link">TopUp</a></li>
+                    <li><a href="#about" class="nav-link">Tentang</a></li>
+                    <li><a href="#contact" class="nav-link">Kontak</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="cart-icon">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="cart-count">0</span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>TopUp Diamond & UC Tercepat & Termurah</h1>
+            <p>Dapatkan diamond Mobile Legends, Free Fire, Magic Chess dan game lainnya dengan harga terbaik dan proses instan!</p>
+            <div class="hero-buttons">
+                <a href="#topup" class="btn btn-primary">Mulai TopUp Sekarang</a>
+                <a href="#games" class="btn btn-secondary">Lihat Game</a>
+            </div>
+        </div>
+        <div class="hero-image">
+            <img src="https://images.unsplash.com/photo-1611606066920-85c2b33e2b9f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Game TopUp">
+        </div>
+    </section>
+
+    <!-- Games Section -->
+    <section id="games" class="games-section">
+        <div class="container">
+            <h2 class="section-title">Game yang Tersedia</h2>
+            <div class="games-grid">
+                <div class="game-card" data-game="ml">
+                    <img src="https://via.placeholder.com/300x200/8258FF/FFFFFF?text=MLBB" alt="Mobile Legends">
+                    <div class="game-info">
+                        <h3>Mobile Legends</h3>
+                        <p>Diamond MLBB</p>
+                    </div>
+                </div>
+                <div class="game-card" data-game="ff">
+                    <img src="https://via.placeholder.com/300x200/FF6B35/FFFFFF?text=Free+Fire" alt="Free Fire">
+                    <div class="game-info">
+                        <h3>Free Fire</h3>
+                        <p>Diamond FF</p>
+                    </div>
+                </div>
+                <div class="game-card" data-game="mc">
+                    <img src="https://via.placeholder.com/300x200/00D4AA/FFFFFF?text=Magic+Chess" alt="Magic Chess">
+                    <div class="game-info">
+                        <h3>Magic Chess</h3>
+                        <p>Token MC</p>
+                    </div>
+                </div>
+                <div class="game-card" data-game="pubg">
+                    <img src="https://via.placeholder.com/300x200/FFD43B/000000?text=PUBG" alt="PUBG">
+                    <div class="game-info">
+                        <h3>PUBG Mobile</h3>
+                        <p>UC PUBG</p>
+                    </div>
+                </div>
+                <div class="game-card" data-game="mlbb">
+                    <img src="https://via.placeholder.com/300x200/FF69B4/FFFFFF?text=CODM" alt="Call of Duty">
+                    <div class="game-info">
+                        <h3>Call of Duty Mobile</h3>
+                        <p>CP CODM</p>
+                    </div>
+                </div>
+                <div class="game-card" data-game="genshin">
+                    <img src="https://via.placeholder.com/300x200/4A90E2/FFFFFF?text=Genshin" alt="Genshin Impact">
+                    <div class="game-info">
+                        <h3>Genshin Impact</h3>
+                        <p>Genesis Crystal</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TopUp Section -->
+    <section id="topup" class="topup-section">
+        <div class="container">
+            <h2 class="section-title">Pilih Nominal TopUp</h2>
+            <div class="topup-container">
+                <div class="game-selector">
+                    <h3>Pilih Game:</h3>
+                    <select id="gameSelect" class="game-select">
+                        <option value="ml">Mobile Legends</option>
+                        <option value="ff">Free Fire</option>
+                        <option value="mc">Magic Chess</option>
+                        <option value="pubg">PUBG Mobile</option>
+                    </select>
+                </div>
+                <div class="topup-packages">
+                    <div class="package-grid" id="packageGrid">
+                        <!-- Packages will be loaded by JS -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="features-section">
+        <div class="container">
+            <h2 class="section-title">Mengapa Pilih Kami?</h2>
+            <div class="features-grid">
+                <div class="feature">
+                    <i class="fas fa-bolt"></i>
+                    <h3>Instan</h3>
+                    <p>TopUp selesai dalam 1-5 menit</p>
+                </div>
+                <div class="feature">
+                    <i class="fas fa-tags"></i>
+                    <h3>Termurah</h3>
+                    <p>Harga paling kompetitif di pasaran</p>
+                </div>
+                <div class="feature">
+                    <i class="fas fa-shield-alt"></i>
+                    <h3>Aman</h3>
+                    <p>100% aman, no ban guarantee</p>
+                </div>
+                <div class="feature">
+                    <i class="fas fa-headset"></i>
+                    <h3>24/7 Support</h3>
+                    <p>CS responsif kapan saja</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2 class="section-title">Hubungi Kami</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-whatsapp"></i>
+                        <div>
+                            <h4>WhatsApp</h4>
+                            <a href="https://wa.me/6281234567890">+62 812-3456-7890</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <a href="mailto:support@diamondmurah.id">support@diamondmurah.id</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <h4>Jam Operasional</h4>
+                            <p>24 Jam / 7 Hari</p>
+                        </div>
+                    </div>
+                </div>
+                <form class="contact-form">
+                    <input type="text" placeholder="Nama" required>
+                    <input type="tel" placeholder="Nomor HP" required>
+                    <textarea placeholder="Pesan Anda" rows="5" required></textarea>
+                    <button type="submit" class="btn btn-primary">Kirim Pesan</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="logo">
+                        <i class="fas fa-gem"></i>
+                        <span>DiamondMurah.ID</span>
+                    </div>
+                    <p>TopUp game tercepat dan termurah di Indonesia</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Game Populer</h4>
+                    <ul>
+                        <li><a href="#">Mobile Legends</a></li>
+                        <li><a href="#">Free Fire</a></li>
+                        <li><a href="#">Magic Chess</a></li>
+                        <li><a href="#">PUBG Mobile</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Metode Pembayaran</h4>
+                    <ul>
+                        <li><i class="fas fa-credit-card"></i> Transfer Bank</li>
+                        <li><i class="fab fa-cc-visa"></i> E-Wallet</li>
+                        <li><i class="fas fa-mobile-alt"></i> Pulsa</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 DiamondMurah.ID. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Cart Modal -->
+    <div id="cartModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Keranjang Belanja</h3>
+                <span class="close">&times;</span>
+            </div>
+            <div class="cart-items" id="cartItems">
+                <!-- Cart items will be populated by JS -->
+            </div>
+            <div class="cart-total">
+                <h4>Total: <span id="cartTotal">Rp 0</span></h4>
+                <button class="btn btn-success checkout-btn">Checkout</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
